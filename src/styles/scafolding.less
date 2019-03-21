@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans.woff2') format('woff2'), url('../fonts/opensans.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sanslight';
+    src: url('../fonts/opensanslight.woff2') format('woff2'), url('../fonts/opensanslight.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.ul-reset(){
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+.content-box-component {
+	box-sizing: content-box;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border:0;
+	padding: 0;
+
+	white-space: nowrap;
+
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+body {
+	min-width: 280px;
+
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	color: #283645;
+
+}
