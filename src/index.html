@@ -7,11 +7,110 @@
 	<link rel="stylesheet" href="styles/style.css">
 <body>
 	<header class="index-header">
-		<a class="header-logo">
-			<img src="img/svg/logo.svg" title="Логотип компании" alt="Логотип компании">
-		</a>
+		<div class="menu-wrapper">
+      <a class="header-logo">
+        <img src="img/svg/logo.svg" title="Логотип компании" alt="Логотип компании">
+      </a>
 
-		
-	</header>
+      <button class="menu-button menu-button--show">Показать меню</button>
+      <button class="menu-button menu-button--close">Скрыть меню</button>
+      <ul class="menu-list">
+        <li class="menu-item">
+          <a>Главная</a>
+        </li>
+        <li class="menu-item">
+          <a href="#">Фотографии</a>
+        </li>
+        <li class="menu-item">
+          <a href="#">Конкурс</a>
+        </li>
+        <li class="menu-item">
+          <a href="#">HTML Academy</a>
+        </li>
+      </ul>
+    </div>
+    <section class="applic">
+      <div class="applic-img__wrapper">
+        <picture class="applic__img">
+          <img src="img/applic-mobile.png">
+        </picture>
+      </div>
+      <div class="applic__description">
+        <p class="applic__intro">Взгляните на жизнь иначе!</p>
+        <button class="applic__button">Скачать приложение</button>
+        <ul class="applic__platform-list">
+          <li class="platform-list__item">
+            <span class="visually-hidden">Apple</span>
+            <img src="img/svg/apple-icon.svg" title="Иконка поддерживаемой приложением платформы" alt="Иконка поддерживаемой приложением платформы">
+          </li>
+          <li class="platform-list__item">
+            <span class="visually-hidden">Android</span>
+            <img src="img/svg/android-icon.svg" title="Иконка поддерживаемой приложением платформы" alt="Иконка поддерживаемой приложением платформы">
+          </li>
+          <li class="platform-list__item">
+            <span class="visually-hidden">Windows Phone</span>
+            <img src="img/svg/windows-icon.svg" title="Иконка поддерживаемой приложением платформы" alt="Иконка поддерживаемой приложением платформы">
+          </li>
+        </ul>
+        <p class="applic__platform">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
+      </div>
+    </section>
+  </header>
+  <main class="index-main">
+    <h1 class="visually-hidden">Приложение PINK</h1>
+    <section class="features">
+      <h2 class="visually-hidden">Преимущества приложения PINK</h2>
+      <p class="features__intro">Устали от серости мегаполиса? Нам есть, что вам  предложить!</p>
+      <div class="features-list__wrapper">
+          <ul class="features__list">
+              <li class="features__item">
+                <img class="features__img" src="img/applic-norm.png" width="186" height="382" alt="До использования приложения мир выглядит так" title="без PINK">
+                <div class="features__description">
+                    <strong>Поднимает настроение</strong>
+                    <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                </div>
+              </li>
+              <li class="features__item">
+                  <img class="features__img" src="img/applic-better.png" width="186" height="382" alt="До использования приложения мир выглядит так" title="без PINK">
+                  <div class="features__description">
+                      <strong>Меняет мир вокруг</strong>
+                      <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                  </div>
+                </li>
+                <li class="features__item">
+                    <img class="features__img" src="img/applic-best.png" width="186" height="382" alt="До использования приложения мир выглядит так" title="без PINK">
+                    <div class="features__description">
+                        <strong>Заводит новых друзей</strong>
+                        <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                    </div>
+                  </li>
+            </ul>
+            <div class="features-img__best">
+              <picture>
+                <source media="(min-width: 620px)" srcset="img/applic-better-tablet.png">
+                <img src="img/applic-better-mobile.png">
+              </picture>
+            </div>
+      </div>
+      <div class="features-effect__wrapper">
+        <div class="features-effect__description">
+            <strong>Эффект на 24 часа!</strong>
+            <p>Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <a href="#">Узнать больше об исследовании</a>
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <h2 class="visually-hidden">Отзывы пользователей</h2>
+      <div class="slider__arrows">
+        <button class="left-arrow">
+          <span class="visually-hidden">Назад</span>
+        </button>
+        <button class="right-arrow">
+          <span class="visually-hidden">Вперед</span>
+        </button>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
