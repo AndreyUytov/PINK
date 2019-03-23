@@ -9,7 +9,7 @@
 	<header class="index-header">
 		<div class="menu-wrapper">
       <a class="header-logo">
-        <img src="img/svg/logo.svg" title="Логотип компании" alt="Логотип компании">
+        <img src="img/svg/header-logo.svg" title="Логотип компании" alt="Логотип компании">
       </a>
 
       <button class="menu-button menu-button--show">Показать меню</button>
@@ -102,15 +102,101 @@
     </section>
     <section class="reviews">
       <h2 class="visually-hidden">Отзывы пользователей</h2>
-      <div class="slider__arrows">
-        <button class="left-arrow">
-          <span class="visually-hidden">Назад</span>
+      <div class="reviews__buttons">
+        <button class="reviews__before-button" type="button">
+          <span class="visually-hidden">Следующий слайд</span>
         </button>
-        <button class="right-arrow">
-          <span class="visually-hidden">Вперед</span>
+        <button class="reviews__next-button">
+          <span class="visually-hidden">Предыдущий слайд</span>
         </button>
       </div>
+      <div class="reviews__toggle">
+        <ul class="reviews-toggle__list">
+          <li class="reviews-toggle__item reviews-toggle__item__active"></li>
+          <li class="reviews-toggle__item"></li>
+          <li class="reviews-toggle__item"></li>
+        </ul>
+      </div>
+      <ul class="reviews__list">
+       <li class="reviews__list-item">
+         <p class="reviews__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+         <b class="reviews__autor">Николай Петров</b>
+         <p class="reviews__autor-desc">25 лет, водитель трамвая</p>
+       </li>
+       <li class="reviews__list-item">
+         <p class="reviews__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+         <b class="reviews__autor">Николай Иванов</b>
+         <p class="reviews__autor-desc">30 лет, водитель трамвая</p>
+       </li>
+       <li class="reviews__list-item">
+         <p class="reviews__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+         <b class="reviews__autor">Василий Петров</b>
+         <p class="reviews__autor-desc">25 лет, водитель автобуса</p>
+       </li>
+     </ul>
+    </section>
+    <section class="tarif-table">
+      <h2 class="visually-hidden">Тарифы</h2>
+      <table>
+        <th class="table-caption">
+          <td></td>
+          <td><b>База</b> 1,99 USD</td>
+          <td class="hit"><b>Стандарт</b> 3,99 USD</td>
+          <td><b>Анлим</b> 9,99 USD</td>
+        </th>
+        <tr>
+          <td>Розовый фильтр</td>
+          <td><span class="visually-hidden">поддерживается</span></td>
+          <td><span class="visually-hidden">поддерживается</span></td>
+          <td><span class="visually-hidden">поддерживается</span></td>
+        </tr>
+        <tr>
+          <td>Смайлики</td>
+          <td class="none"><span class="visually-hidden">не поддерживается</span></td>
+          <td><span class="visually-hidden">поддерживается</span></td>
+          <td><span class="visually-hidden">поддерживается</span></td>
+        </tr>
+        <tr>
+          <td>Комментарии</td>
+          <td class="none"><span class="visually-hidden">не поддерживается</span></td>
+          <td class="none"><span class="visually-hidden">не поддерживается</span></td>
+          <td><span class="visually-hidden">поддерживается</span></td>
+        </tr>
+      </table>
     </section>
   </main>
+  <footer class="footer">
+    <section class="contacts">
+      <h2 class="visually-hidden">Наши контакты</h2>
+      <p class="contacts__intro">Остались вопросы? Свяжитесь с нами!</p>
+    <ul class="contacts__list">
+      <li class="contacts__list-item"><b>Звоните:</b>+7 (812) 555-66-66</li>
+      <li class="contacts__list-item"><b>Пишите:</b><a href="http://www.mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
+      <li class="contacts__list-item"><b>Приезжайте в гости:</b>ул. Большая  Конюшенная, 19/8</li>
+    </ul>
+    </section>
+    <section class="map">
+      <h2 class="visually-hidden">Положение на карте</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533261!2d30.32085871628766!3d59.93871648187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1553346148052" width="1400" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+    <section class="subfooter">
+      <h2 class="visually-hidden">Копирайтинг и ссылки на социальные сети</h2>
+      <a class="subfooter__logo">
+        <img src="img/svg/footer-logo.svg" alt="Логотип компании" title="Логотип компании">
+      </a>
+      <ul class="subfooter__social-list">
+        <li class="social-list__item">
+          <span class="visually-hidden">twitter</span>
+        </li>
+        <li class="social-list__item">
+          <span class="visually-hidden">facebook</span>
+        </li>
+        <li class="social-list__item">
+          <span class="visually-hidden">you-tube</span>
+        </li>
+      </ul>
+      <p class="subfooter__development">Разработано</p>
+    </section>
+  </footer>
 </body>
 </html>
