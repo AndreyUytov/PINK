@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+	    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>PINK</title>
+	    <link rel="stylesheet" href="styles/style.css">
+  <body>
+	  <header class="index-header">
+  		<div class="menu-wrapper">
+        <a class="header-logo">
+          <img src="img/svg/header-logo.svg" title="Логотип компании" alt="Логотип компании">
+        </a>
+
+        <button class="menu-button menu-button--show">Показать меню</button>
+        <button class="menu-button menu-button--close">Скрыть меню</button>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="menu-item">
+            <a>Фотографии</a>
+          </li>
+          <li class="menu-item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+      <h1 class="header__title-page">Фотографии пользователей</h1>
+    </header>
+    <main class="photo-page__main">
+      <p class="photo-page__intro">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      <section class="panorama">
+        <h2 class="visually-hidden">Панорама дня!</h2>
+        <img class="post__img" src="img/panorama.jpg">
+        <div class="post__desc">
+          <span class="post__autor">Анна <span class="post__time">(5минут назад)</span></span>
+          <p class="post__message">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <span class="post__like">Нравится:<span class="post__like-counter">215</span></span>
+          <span class="post__heart"><span class="visually-hidden">Кликни, если понравилось фото</span></span>
+        </div>
+      </section>
+      <section class="post-list">
+        <ul>
+          <li class="post-list__item">
+            <img src="img/photo-1.jpg">
+            <div class="post__desc">
+              <span class="post__autor">Левон <span class="post__time">(5 часов назад)</span></span>
+              <p class="post__message">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <span class="post__like">Нравится:<span class="post__like-counter">356</span></span>
+              <span class="post__heart"><span class="visually-hidden">Кликни, если понравилось фото</span></span>
+            </div>
+          </li>
+          <li class="post-list__item">
+            <img src="img/photo-2.jpg">
+            <div class="post__desc">
+              <span class="post__autor">Антон <span class="post__time">(12 часов назад)</span></span>
+              <p class="post__message">Соседи будут рады!</p>
+              <span class="post__like">Нравится:<span class="post__like-counter">666</span></span>
+              <span class="post__heart"><span class="visually-hidden">Кликни, если понравилось фото</span></span>
+            </div>
+          </li>
+          <li class="post-list__item">
+            <img src="img/photo-3.jpg">
+            <div class="post__desc">
+              <span class="post__autor">Борис <span class="post__time">(20 часов назад)</span></span>
+              <p class="post__message">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <span class="post__like">Нравится:<span class="post__like-counter">215</span></span>
+              <span class="post__heart"><span class="visually-hidden">Кликни, если понравилось фото</span></span>
+            </div>
+          </li>
+          <li class="post-list__item">
+            <img src="img/photo-4.jpg">
+            <div class="post__desc">
+              <span class="post__autor">Сергей <span class="post__time">(25 часов назад)</span></span>
+              <p class="post__message">Самая кубанская в мире!</p>
+              <span class="post__like">Нравится:<span class="post__like-counter">4</span></span>
+              <span class="post__heart"><span class="visually-hidden">Кликни, если понравилось фото</span></span>
+            </div>
+          </li>
+          <li class="post-list__item">
+            <img src="img/photo-5.jpg">
+            <div class="post__desc">
+              <span class="post__autor">Максим <span class="post__time">(40 часов назад)</span></span>
+              <p class="post__message">Где снег-то?</p>
+              <span class="post__like">Нравится:<span class="post__like-counter">150</span></span>
+              <span class="post__heart"><span class="visually-hidden">Кликни, если понравилось фото</span></span>
+            </div>
+          </li>
+          <li class="post-list__item">
+            <img src="img/photo-6.jpg">
+            <div class="post__desc">
+              <span class="post__autor">Надежда <span class="post__time">(45 часов назад)</span></span>
+              <p class="post__message">Всем GM и взаимные лайки!</p>
+              <span class="post__like">Нравится:<span class="post__like-counter">2560</span></span>
+              <span class="post__heart"><span class="visually-hidden">Кликни, если понравилось фото</span></span>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="new-post">
+        <h2 class="visually-hidden">Выкладывайте свои фото</h2>
+        <p class="new-post__desc">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <div class="new-post__wrapper">
+          <img src="img/photo-7.jpg">
+          <div class="new-post__setting">
+            <ul>
+              <li class="setting__item">
+                <span class="crop-icon">
+                  <span class="visually-hidden">Изменить размер картинки</span>
+                </span>
+                <div class="setting__scale">
+                  <span class="setting__slider"></span>
+                </div>
+              </li>
+              <li class="setting__item setting__item--active">
+                <span class="fill-icon">
+                  <span class="visually-hidden">Изменить размер картинки</span>
+                </span>
+                <div class="setting__scale">
+                  <span class="setting__slider"></span>
+                </div>
+              </li>
+              <li class="setting__item">
+                <span class="contrast-icon">
+                  <span class="visually-hidden">Изменить размер картинки</span>
+                </span>
+                <div class="setting__scale">
+                  <span class="setting__slider"></span>
+                </div>
+              </li>
+            </ul>
+            <button class="new-post__button post-button">Запостить</button>
+            <button class="new-post__button cancel-button">Отмена</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="subfooter">
+        <h2 class="visually-hidden">Копирайтинг и ссылки на социальные сети</h2>
+        <a class="subfooter__logo">
+          <img src="img/svg/footer-logo.svg" alt="Логотип компании" title="Логотип компании">
+        </a>
+        <ul class="subfooter__social-list">
+          <li class="social-list__item">
+            <span class="visually-hidden">twitter</span>
+          </li>
+          <li class="social-list__item">
+            <span class="visually-hidden">facebook</span>
+          </li>
+          <li class="social-list__item">
+            <span class="visually-hidden">you-tube</span>
+          </li>
+        </ul>
+        <p class="subfooter__development">Разработано</p>
+      </section>
+    </footer>
+  </body>
+</html>
