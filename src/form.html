@@ -31,6 +31,101 @@
       </div>
       <h1 class="header__title-page">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </header>
+    <main class="form-page__main">
+      <p class="form-page__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+      <form class="form">
+        <section class="form__name">
+          <label>
+          <p>Фамилия:</p>
+          <input type="text" name="lastName" placeholder="Укажите фамилию*">
+        </label>
+        <label>
+          <p>Имя:</p>
+          <input type="text" name="firstName" placeholder="Введите ваше имя*">
+        </label>
+        <label>
+          <p>Отчество:</p>
+          <input type="text" name="patronymicName" placeholder="Ну и отчество тоже">
+        </label>
+        </section>
+        <section class="form__application-type">
+          <fieldset>
+            <legend>С каким приложением путешествовали?</legend>
+            <label>
+              <input type="radio" name="application-type" value="iOS" checked>
+              <span class="radio-indicator"></span>
+              <span>Pink для iOS</span>
+            </label>
+            <label>
+              <input type="radio" name="application-type" value="android">
+              <span class="radio-indicator"></span>
+              <span>Pink на Android</span>
+            </label>
+            <label>
+              <input type="radio" name="application-type" value="wp">
+              <span class="radio-indicator"></span>
+              <span>Windows Phone</span>
+            </label>
+          </fieldset>
+        </section>
+        <section class="form__contact-info">
+          <fieldset>
+            <legend>Контактная информация</legend>
+            <label>
+              <input type="tel" name="tel" placeholder="Номер, пожалуйста">
+              <p>Номер телефона</p>
+            </label>
+            <label>
+              <input type="email" name="mail" placeholder="Введите почту*">
+              <p>Адрес почты</p>
+            </label>
+          </fieldset>
+        </section>
+        <section class="form__checkbox">
+          <fieldset>
+            <legend>Ваши безбашенные достижения в путешествии</legend>
+            <label>
+              <input type="checkbox" name="selfie" checked>
+              <span class="checkbox-indicator"></span>
+              <p>Сделал селфи с акулой</p>
+            </label>
+            <label>
+              <input type="checkbox" name="sunfire" checked>
+              <span class="checkbox-indicator"></span>
+              <p>Обгорел на пляже</p>
+            </label>
+            <label>
+              <input type="checkbox" name="chackNorris">
+              <span class="checkbox-indicator"></span>
+              <p>Видел Чака Нориса</p>
+            </label>
+            <label>
+              <input type="checkbox" name="suvenier">
+              <span class="checkbox-indicator"></span>
+              <p>Накупил сувениров</p>
+            </label>
+            <label>
+              <input type="checkbox" name="tower" checked>
+              <span class="checkbox-indicator"></span>
+              <p>Удержал башню</p>
+            </label>
+            <label>
+              <input type="checkbox" name="hotel">
+              <span class="checkbox-indicator"></span>
+              <p>Разгромил отель</p>
+            </label>
+          </fieldset>
+        </section>
+        <section class="form__textarea">
+          <fieldset>
+            <legend>Опишите свои эмоции</legend>
+            <textarea placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+        </section>
+        <button class="submit-button" type="submit">Отправить форму</button>
+        <span class="form__helper">* — Обязательные <span class="form__helper form__helper--desktop">для заполнения </span>поля</span>
+      </form>
+    </main>
     <footer class="footer">
       <section class="subfooter">
         <h2 class="visually-hidden">Копирайтинг и ссылки на социальные сети</h2>
