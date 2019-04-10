@@ -32,7 +32,25 @@
     <section class="applic">
       <div class="applic-img__wrapper">
         <picture class="applic__img">
-          <img src="img/applic-mobile.png">
+            <source type="image/webp"
+						media="(min-width: 960px)" srcset="img/index/applic-desktop.webp,
+            img/index/2x/applic-desktop.webp 2x">
+
+            <source media="(min-width: 960px)" srcset="img/index/applic-desktop.png,
+            img/index/2x/applic-desktop.png 2x">
+
+            <source type="image/webp"
+						media="(min-width: 660px)" srcset="img/index/applic-tablet.webp,
+            img/index/2x/applic-tablet.webp 2x">
+
+            <source media="(min-width: 660px)" srcset="img/index/applic-tablet.png,
+            img/index/2x/applic-tablet.png 2x">
+
+            <source type="image/webp"
+            media="(max-width: 659px)" srcset="img/index/applic-mobile.webp,
+            img/index/2x/applic-mobile.webp 2x">
+
+          <img src="img/index/applic-mobile.png" srcset="img/index/2x/applic-mobile.png 2x">
         </picture>
       </div>
       <div class="applic__description">
@@ -62,41 +80,79 @@
       <h2 class="visually-hidden">Преимущества приложения PINK</h2>
       <p class="features__intro">Устали от серости мегаполиса? Нам есть, что вам  предложить!</p>
       <div class="features-list__wrapper">
-          <ul class="features__list">
-              <li class="features__item">
-                <img class="features__img" src="img/applic-norm.png" width="186" height="382" alt="До использования приложения мир выглядит так" title="без PINK">
-                <div class="features__description">
-                    <strong>Поднимает настроение</strong>
-                    <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-                </div>
-              </li>
-              <li class="features__item">
-                  <img class="features__img" src="img/applic-better.png" width="186" height="382" alt="До использования приложения мир выглядит так" title="без PINK">
-                  <div class="features__description">
-                      <strong>Меняет мир вокруг</strong>
-                      <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-                  </div>
-                </li>
-                <li class="features__item">
-                    <img class="features__img" src="img/applic-best.png" width="186" height="382" alt="До использования приложения мир выглядит так" title="без PINK">
-                    <div class="features__description">
-                        <strong>Заводит новых друзей</strong>
-                        <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-                    </div>
-                  </li>
-            </ul>
-            <div class="features-img__best">
-              <picture>
-                <source media="(min-width: 620px)" srcset="img/applic-better-tablet.png">
-                <img src="img/applic-better-mobile.png">
-              </picture>
+        <picture class="features__intro-img">
+          <source type="image/webp"
+            media="(min-width: 660px)" srcset="img/index/applic-better-tablet.webp,
+            img/index/2x/applic-better-tablet.webp 2x">
+
+          <source media="(min-width: 660px)" srcset="img/index/applic-better-tablet.png,
+            img/index/2x/applic-better-tablet.png 2x">
+
+          <source type="image/webp"
+            media="(max-width: 659px)" srcset="img/index/applic-better-mobile.webp,
+            img/index/2x/applic-better-mobile.webp 2x">
+
+          <img src="img/index/applic-better-mobile.png" srcset="img/index/2x/applic-better-mobile.png 2x" alt="С приложением ПИНК" title="с PINK">
+        </picture>
+        <ul class="features__list">
+          <li class="features__item">
+            <picture class="features__img">
+              <source type="image/webp"
+                srcset="img/index/applic-norm.webp,
+                img/index/2x/applic-norm.webp 2x">
+              <img src="img/index/applic-norm.png" srcset="img/index/2x/applic-norm.png 2x" alt="До использования приложения мир выглядит так" title="без PINK">
+            </picture>
+            <div class="features__description">
+              <strong>Поднимает настроение</strong>
+              <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </div>
+          </li>
+          <li class="features__item">
+            <picture class="features__img">
+              <source type="image/webp"
+                srcset="img/index/applic-better.webp,
+                img/index/2x/applic-better.webp 2x">
+              <img src="img/index/applic-better.png" srcset="img/index/2x/applic-better.png 2x" alt="Так выглядит ПИНК со стандартным тарифом" title="Standart PINK">
+            </picture>
+            <div class="features__description">
+              <strong>Меняет мир вокруг</strong>
+              <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </div>
+          </li>
+          <li class="features__item">
+            <picture class="features__img">
+              <source type="image/webp"
+                srcset="img/index/applic-best.webp,
+                img/index/2x/applic-best.webp 2x">
+              <img src="img/index/applic-best.png" srcset="img/index/2x/applic-best.png 2x" alt="Так выглядит ПИНК с тарифом АНЛИМ" title="Unlim PINK">
+            </picture>
+            <div class="features__description">
+              <strong>Заводит новых друзей</strong>
+              <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </div>
+          </li>
+        </ul>
       </div>
       <div class="features-effect__wrapper">
         <div class="features-effect__description">
-            <strong>Эффект на 24 часа!</strong>
-            <p>Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-            <a href="#">Узнать больше об исследовании</a>
+          <picture class="features-effect__img">
+            <source type="image/webp"
+              media="(min-width: 960px)" srcset="img/index/timer-features-desktop.webp,
+              img/index/2x/timer-features-desktop.webp 2x">
+
+            <source
+              media="(min-width: 960px)" srcset="img/index/timer-features-desktop.png,
+              img/index/2x/timer-features-desktop.png 2x">
+
+            <source type="image/webp"
+              media="(min-width: 660px)" srcset="img/index/timer-features-tablet.webp,
+              img/index/2x/timer-features-tablet.webp 2x">
+
+            <img src="img/index/timer-features-tablet.png" srcset="img/index/2x/timer-features-tablet.png 2x">
+          </picture>
+          <strong>Эффект на 24 часа!</strong>
+          <p>Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a href="#">Узнать больше об исследовании</a>
         </div>
       </div>
     </section>
