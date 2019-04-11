@@ -61,11 +61,30 @@ input[type="radio"].visually-hidden {
 }
 
 body {
-	min-width: 280px;
+	min-width: 320px;
 
 	font-family: 'Open Sans', Arial, sans-serif;
 	font-size: 14px;
 	line-height: 24px;
-	color: #283645;
+	color: @darkText;
 
+}
+
+.content {
+  min-width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media (min-width: 660px) {
+  .content {
+    min-width: 660px;
+  }
+}
+
+@media (min-width: 660px) {
+  .content {
+    min-width: 320px;
+    padding: 0 10px;
+  }
 }

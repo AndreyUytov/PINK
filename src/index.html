@@ -8,16 +8,21 @@
 <body>
 	<header class="index-header">
 		<div class="menu-wrapper">
-      <a class="header-logo">
-        <svg width=147 height=40 class="header-logo__big-svg">
-          <use class="logo-text-composit" xlink:href="img/svg/logo-sprite.svg#logo-text-composit"></use>
-          <use class="logo-stars" xlink:href="img/svg/logo-sprite.svg#logo-stars"></use>
-          <use class="logo-glass-desktop" xlink:href="img/svg/logo-sprite.svg#logo-glass-desktop"></use>
-        </svg>
-      </a>
+      <div class="menu-button__wrapper">
+        <div class="content menu-button-flex">
+          <a class="header-logo">
+            <svg width=75 height=23 class="header-logo__big-svg">
+              <use class="logo-text-composit logo-hidden" xlink:href="img/svg/logo-sprite.svg#logo-text-composit"></use>
+              <use class="logo-stars logo-hidden" xlink:href="img/svg/logo-sprite.svg#logo-stars"></use>
+              <use class="logo-glass-desktop logo-hidden" xlink:href="img/svg/logo-sprite.svg#logo-glass-desktop"></use>
+              <use class="logo-text-simple logo-hidden" xlink:href="img/svg/logo-sprite.svg#logo-text-simple"></use>
+            </svg>
+          </a>
 
-      <button class="menu-button menu-button--show">Показать меню</button>
-      <button class="menu-button menu-button--close">Скрыть меню</button>
+          <button class="menu-button menu-button--show"><span class="visually-hidden">Показать меню</span></button>
+          <button class="menu-button menu-button--close"><span class="visually-hidden">Скрыть меню</span></button>
+        </div>
+      </div>
       <ul class="menu-list">
         <li class="menu-item">
           <a>Главная</a>
