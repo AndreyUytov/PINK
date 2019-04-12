@@ -19,7 +19,7 @@
             </svg>
           </a>
 
-          <button class="menu-button menu-button--show"><span class="visually-hidden">Показать меню</span></button>
+          <button class="menu-button menu-button--show hide"><span class="visually-hidden">Показать меню</span></button>
           <button class="menu-button menu-button--close"><span class="visually-hidden">Скрыть меню</span></button>
         </div>
       </div>
@@ -62,24 +62,26 @@
           <img src="img/index/applic-mobile.png" srcset="img/index/2x/applic-mobile.png 2x">
         </picture>
       </div>
-      <div class="applic__description">
+      <div class="applic__description content">
         <p class="applic__intro">Взгляните на жизнь иначе!</p>
-        <button class="applic__button">Скачать приложение</button>
+        <button class="applic__button button">
+          <span>Скачать приложение</span>
+        </button>
         <ul class="applic__platform-list">
           <li class="platform-list__item">
             <span class="visually-hidden">Apple</span>
-            <img src="img/svg/apple-icon.svg" title="Иконка поддерживаемой приложением платформы" alt="Иконка поддерживаемой приложением платформы">
+            <img width="47" height="57" src="img/svg/apple.svg" title="Иконка поддерживаемой приложением платформы" alt="Иконка поддерживаемой приложением платформы">
           </li>
           <li class="platform-list__item">
             <span class="visually-hidden">Android</span>
-            <img src="img/svg/android-icon.svg" title="Иконка поддерживаемой приложением платформы" alt="Иконка поддерживаемой приложением платформы">
+            <img width="42" height="47" src="img/svg/android.svg" title="Иконка поддерживаемой приложением платформы" alt="Иконка поддерживаемой приложением платформы">
           </li>
           <li class="platform-list__item">
             <span class="visually-hidden">Windows Phone</span>
-            <img src="img/svg/windows-icon.svg" title="Иконка поддерживаемой приложением платформы" alt="Иконка поддерживаемой приложением платформы">
+            <img width="44" height="42" src="img/svg/windowsphone.svg" title="Иконка поддерживаемой приложением платформы" alt="Иконка поддерживаемой приложением платформы">
           </li>
         </ul>
-        <p class="applic__platform">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
+        <p class="applic__platform">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window&nbsp;8</p>
       </div>
     </section>
   </header>
@@ -263,5 +265,7 @@
       <p class="subfooter__development">Разработано</p>
     </section>
   </footer>
+
+  <script src="js/index.js"></script>
 </body>
 </html>
