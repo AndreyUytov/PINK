@@ -7,13 +7,13 @@
 
 .menu-wrapper {
   width: 100%;
+  position: relative;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  background-color: #000000;
+  z-index: 1;
 }
 
 .menu-button__wrapper {
@@ -49,12 +49,12 @@
   fill: #ffffff;
 }
 
-.header-logo[href]:hover .logo-text-simple {
+.header-logo[href]:hover use {
   fill: @linkText;
   cursor: pointer;
 }
 
-.header-logo[href]:active .logo-text-simple {
+.header-logo[href]:active use {
   fill: #ffffff;
   opacity: 0.3;
   cursor: pointer;
@@ -248,137 +248,40 @@
     display: block;
     fill: #ffffff;
   }
-  
-  .header-logo[href]:hover .logo-text-simple {
-    fill: @linkText;
-    cursor: pointer;
-  }
-  
-  .header-logo[href]:active .logo-text-simple {
-    fill: #ffffff;
-    opacity: 0.3;
-    cursor: pointer;
-  }
-  
-  .menu-button {
-    position: relative;
-    display: block;
-  
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .menu-button--show {
-    width: 50px;
-    height: 24px;
-  
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      width: 50px;
-      height: 5px;
-  
-      background-color: #ffffff;
-      box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
-    }
-    &:hover::before {
-      background-color: @linkText;
-      box-shadow: 0 10px 0 0 @linkText, 0 20px 0 0 @linkText;
-    }
-    &:active::before {
-      opacity: 0.3;
-    }
-  }
-  
-  .menu-button--close {
-    width: 25px;
-    height: 25px;
-  
-    &::before,
-    &::after {
-      content: '';
-      position: absolute;
-      top: 10px;
-      left: -3px;
-      width: 30px;
-      height: 5px;
-  
-      background-color: #ffffff;
-    }
-    &::before {
-      transform: rotate(45deg);
-    }
-    &::after {
-      transform: rotate(-45deg);
-    }
-    &:hover::before,
-    &:hover::after {
-      background-color: @linkText;
-    }
-    &:active::before,
-    &:active::after {
-      opacity: 0.3;
-    }
-  }
-  
-  .menu-list {
-    .ul-reset();
-    width: 100%;
-  }
-  
-  .menu-item a {
-    margin-bottom: 1px;
-    min-height: 63px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    background-color: #283645;
-    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.15), 0px 1px 0px 0px rgba(0, 0, 0, 1);
-  
-    font-size: 18px;
-    line-height: 32px;
-    color: @liteText;
-    font-weight: bold;
-    text-transform: uppercase;
-    &[href]:hover {
-      color: @linkText;
-    }
-    &[href]:active {
-      color: #5b3149;
-    }
-  }
-  
+
   .applic {
-    background-color: #1d2631;
-  }
-  
-  .applic-img__wrapper {
-    min-height: 465px;
-  
+    position: relative;
+    min-height: 729px;
+
     display: flex;
-    justify-content: center;
     align-items: flex-end;
-  
-    background-image: url(../img/back/header-field-mobile.jpg);
+    justify-content: center;
+    
+    background-image: url(../img/back/header-field-tablet.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     @media (min-resolution: @retina1), (min-resolution: @retina2) {
-      background-image: url(../img/../img/back/2x/header-field-mobile.jpg);
+      background-image: url(../img/../img/back/2x/header-field-tablet.jpg);
     }
-    overflow: hidden;
+  }
+  
+  .applic-img__wrapper {
+    background: none;
   }
   
   .applic__img {
-    margin-bottom: -30px;
+    margin-bottom: 0px;
   }
   
   .applic__description {
-    min-height: 271px;
+    position: absolute;
+    top: 200px;
+    left: 0;
+
+    width: 50%;
+    max-width: 370px;
+    height: 430px;
     padding-top: 30px;
     padding-bottom: 35px;
   
@@ -389,42 +292,111 @@
   }
   
   .applic__intro {
-    display: none;
+    padding: 0;
+    margin: 0;
+
+    display: block;
+
+    font-family: 'Open Sanslight';
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 960px) {  
+
+  .menu-wrapper {
+    min-width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-wrapper .menu-button__wrapper {
+    position: static;
+  }
+
+ .header-logo .logo-hidden {
+  display: none;
   }
   
-  .applic__platform-list {
-    min-width: 100%;
-    .ul-reset();
+  .header-logo .logo-text-composit,
+  .header-logo .logo-glass-desktop {
+    display: block;
+    fill: #ffffff;
+  }
+
+  .header-logo .logo-stars {
+    display: block;
+    fill: #d22856;
+  }
+
+  .index-header .menu-list {
+    width: 630px;
+
+    display: flex;
+
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .applic {
+    position: relative;
+    min-height: 729px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    
+    background-image: url(../img/back/header-field-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @media (min-resolution: @retina1), (min-resolution: @retina2) {
+      background-image: url(../img/../img/back/2x/header-field-tablet.jpg);
+    }
+  }
+  
+  .applic-img__wrapper {
+    background: none;
+  }
+  
+  .applic__img {
+    margin-bottom: 0px;
+  }
+  
+  .applic__description {
+    position: absolute;
+    top: 200px;
+    left: 0;
+
+    width: 50%;
+    max-width: 370px;
+    height: 430px;
+    padding-top: 30px;
+    padding-bottom: 35px;
   
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
   }
   
-  .applic__platform {
+  .applic__intro {
     padding: 0;
     margin: 0;
-    text-align: center;
-    vertical-align: middle;
-  
+
+    display: block;
+
     font-family: 'Open Sanslight';
-  }
-  
-  .applic__button {
-    width: 281px;
-    height: 55px;
-  
-    color: #ffffff;
-  
-    border: 4px solid white;
-    border-radius: 35px;
-  
-    background: transparent;
-    &:hover {
-      background: #ffffff;
-    }
-    &:hover span {
-      color: @linkText;
-    }
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
   }
 }

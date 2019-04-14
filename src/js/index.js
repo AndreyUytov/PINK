@@ -4,12 +4,16 @@
   const menu = document.querySelector('.menu-list');
   const logo = document.querySelector('.menu-button__wrapper');
 
-  const menuHider = function (evt) {
-    evt.preventDefault();
+  const menuSecrete = function () {
     closeButton.classList.add('hide');
     showButton.classList.remove('hide');
     menu.classList.add('hide');
     logo.classList.add('menu-shower');
+  };
+
+  const menuHider = function (evt) {
+    evt.preventDefault();
+    menuSecrete();
   };
 
   const menuShower = function (evt) {
@@ -28,7 +32,11 @@
     showButton.addEventListener('click', menuShower);
   };
 
+  const jsSupported = function () {
+    menuSecrete();
+  };
+
+  jsSupported();
   closeButtonClickHandler();
   showButtonClickHandler();
-
 })();
