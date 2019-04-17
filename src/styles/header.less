@@ -228,7 +228,7 @@
   }
 }
 
-@media (min-width: 660px) {  
+@media (min-width: 660px) {
 
   .menu-button__wrapper {
     min-height: 110px;
@@ -237,12 +237,12 @@
  .header-logo .logo-hidden {
   display: none;
 }
-  
+
   .header-logo svg {
     width: 147px;
     height: 40px;
   }
-  
+
   .header-logo .logo-text-composit,
   .header-logo .logo-glass-tablet {
     display: block;
@@ -256,7 +256,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    
+
     background-image: url(../img/back/header-field-tablet.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -265,15 +265,15 @@
       background-image: url(../img/../img/back/2x/header-field-tablet.jpg);
     }
   }
-  
+
   .applic-img__wrapper {
     background: none;
   }
-  
+
   .applic__img {
     margin-bottom: 0px;
   }
-  
+
   .applic__description {
     position: absolute;
     top: 200px;
@@ -284,13 +284,13 @@
     height: 430px;
     padding-top: 30px;
     padding-bottom: 35px;
-  
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .applic__intro {
     padding: 0;
     margin: 0;
@@ -304,7 +304,18 @@
   }
 }
 
-@media (min-width: 960px) {  
+@media (min-width: 960px) {
+
+  .index-header {
+    background-color: @darkText;
+    background-image: url(../img/back/header-field.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @media (min-resolution: @retina1), (min-resolution: @retina2) {
+      background-image: url(../img/back/2x/header-field2x.jpg);
+    }
+  }
 
   .menu-wrapper {
     min-width: 960px;
@@ -314,16 +325,25 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .menu-wrapper .menu-button__wrapper {
     position: static;
+    width: 150px;
+
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .menu-button {
+    display: none;
   }
 
  .header-logo .logo-hidden {
   display: none;
   }
-  
+
   .header-logo .logo-text-composit,
   .header-logo .logo-glass-desktop {
     display: block;
@@ -339,64 +359,55 @@
     width: 630px;
 
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 
   }
 
-  .menu-button {
-    display: none;
+  .menu-item a {
+    position: relative;
+    margin-bottom: 0px;
+    min-height: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: transparent;
+    box-shadow: none;
+
+    font-size: 18px;
+    line-height: 18px;
+    color: @liteText;
+    font-weight: normal;
+    text-transform: none;
+  }
+
+  .menu-item--active a::before {
+    content: '';
+    position: absolute;
+    bottom: 9px;
+    left: 0px;
+    right: 0px;
+
+    height: 2px;
+    background-color: #ffffff;
   }
 
   .applic {
     position: relative;
     min-height: 729px;
 
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    
-    background-image: url(../img/back/header-field-tablet.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    @media (min-resolution: @retina1), (min-resolution: @retina2) {
-      background-image: url(../img/../img/back/2x/header-field-tablet.jpg);
-    }
+    justify-content: flex-end;
+
+    background-image: none;
+    background-color: transparent;
   }
-  
+
   .applic-img__wrapper {
+    margin-left: auto;
     background: none;
   }
-  
-  .applic__img {
-    margin-bottom: 0px;
-  }
-  
-  .applic__description {
-    position: absolute;
-    top: 200px;
-    left: 0;
 
-    width: 50%;
-    max-width: 370px;
-    height: 430px;
-    padding-top: 30px;
-    padding-bottom: 35px;
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .applic__intro {
-    padding: 0;
-    margin: 0;
 
-    display: block;
-
-    font-family: 'Open Sanslight';
-    font-size: 40px;
-    line-height: 40px;
-    text-align: center;
-  }
 }
